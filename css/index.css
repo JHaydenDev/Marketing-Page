@@ -1,0 +1,477 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Source sans pro', 'Raleway';
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source sans pro', 'Raleway';
+  color: black;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28590C;
+  width: 1000px;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 500;
+}
+@media (max-width: 500px) {
+  .container .top {
+    flex-direction: column;
+  }
+}
+.container .top .logo {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2%;
+}
+.container .top .logo h1 {
+  color: #A1E6DF;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.container .top .logo h1:hover {
+  cursor: pointer;
+  transform: rotateY(-360deg);
+  transition-duration: 1000ms;
+  color: #FFA820;
+}
+.container .top .logo a {
+  text-decoration: none;
+}
+.container .top .nav {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .container .top .nav {
+    width: 80%;
+  }
+}
+.container .top .nav a {
+  margin: 2%;
+  font-size: 1.5rem;
+  color: #A1E6DF;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container .top .nav a {
+    margin: 0 10% ;
+  }
+}
+.container .top .nav a:hover:hover {
+  cursor: pointer;
+  color: #FFA820;
+  text-decoration: underline;
+}
+.container footer .socialMedia {
+  background-color: #DFE9AC;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  line-height: 5rem;
+  color: #28590C;
+}
+.container footer .socialMedia a {
+  margin: 0 2%;
+}
+.container footer .copyright {
+  text-align: center;
+  background-color: #28590C;
+  color: #A1E6DF;
+  font-size: 1rem;
+  padding: 1% 0;
+}
+.container {
+  z-index: 0;
+  background-color: #ebeee2;
+}
+.container header .banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background: url('../img/share_meal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.container header .banner .callToAction {
+  width: 40%;
+  line-height: 3rem;
+  background-color: #97BE11;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #28590C;
+}
+@media (max-width: 500px) {
+  .container header .banner .callToAction {
+    width: 60%;
+  }
+}
+.container header .banner .callToAction h4 {
+  font-size: 2rem;
+  color: whitesmoke;
+  padding: 5%;
+}
+.container header .banner .callToAction .signup {
+  color: #FFA820;
+  background-color: #DFE9AC;
+  width: 80%;
+  font-size: 1.5rem;
+  border: 2px solid #FFA820;
+  border-radius: 5%;
+  text-align: center;
+  padding: 5%;
+  font-weight: bold;
+}
+.container header .banner .callToAction .signup:hover {
+  cursor: pointer;
+  color: #DFE9AC;
+  background-color: #FFA820;
+  border-color: #28590C;
+}
+@media (max-width: 500px) {
+  .container header .banner .callToAction .signup {
+    display: inline-block;
+    padding: 0%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+.container .intro {
+  margin: 5% 0;
+  width: 100%;
+  padding: 0 5%;
+}
+.container .intro h2 {
+  text-align: center;
+  margin: 3% 0;
+}
+.container .intro p {
+  text-align: center;
+  margin: 2% 0;
+}
+.container .middle {
+  display: flex;
+  align-content: center;
+  margin: 5% 0;
+  padding: 2%;
+  background-color: #DFE9AC;
+}
+@media (max-width: 500px) {
+  .container .middle {
+    flex-direction: column;
+    margin: 2% 10%;
+  }
+}
+.container .middle .feat {
+  width: 100%;
+  text-align: center;
+  color: #28590C;
+}
+@media (max-width: 500px) {
+  .container .middle .feat {
+    margin: 5% 0;
+  }
+}
+.container .middle .feat i {
+  font-size: 3rem;
+  margin: 8% 0;
+  color: #FFA820;
+}
+@media (max-width: 500px) {
+  .container .middle .feat i {
+    font-size: 5rem;
+  }
+}
+.container .why {
+  margin: 5% 0;
+  width: 100%;
+  z-index: 0;
+}
+.container .why h2 {
+  text-align: center;
+  z-index: 1;
+  margin: 3% 0;
+}
+.container .why p {
+  text-align: center;
+  z-index: 1;
+  margin: 2% 5%;
+}
+header .team_banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background: url('../img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+header .team_banner .team_box {
+  left: 30%;
+  width: 40%;
+  line-height: 3rem;
+  background-color: #97BE11;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #28590C;
+}
+header .team_banner .team_box h4 {
+  font-size: 2rem;
+  color: white;
+  padding: 5%;
+}
+header .team_banner .team_box .signup {
+  color: #FFA820;
+  background-color: #DFE9AC;
+  width: 80%;
+  font-size: 1.5rem;
+  border: 2px solid #FFA820;
+  border-radius: 5%;
+  text-align: center;
+  padding: 5%;
+  font-weight: bold;
+}
+header .team_banner .team_box .signup:hover {
+  cursor: pointer;
+  color: #DFE9AC;
+  background-color: #FFA820;
+  border-color: #28590C;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url('../img/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: row wrap;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    flex-flow: row wrap;
+  }
+}
+.wrapper .card {
+  margin: 1%;
+  width: 30%;
+  text-align: center;
+  background-color: #DFE9AC;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3%;
+}
+@media (max-width: 800px) {
+  .wrapper .card {
+    width: 40%;
+    margin: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .card {
+    width: 60%;
+    margin: 2%;
+  }
+}
+.wrapper .card h2 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3% 0;
+}
+.wrapper .card h3 {
+  width: 100%;
+  margin: 2% 0;
+  font-size: 2rem;
+  font-style: italic;
+}
+.wrapper .card .prof-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.wrapper .card .prof-links i {
+  font-size: 3rem;
+  color: #28590C;
+}
+.wrapper .card .prof-links i:hover {
+  cursor: pointer;
+  color: #FFA820;
+}
+.wrapper .card .prof-links a {
+  margin: 2% 10%;
+}
+.wrapper .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

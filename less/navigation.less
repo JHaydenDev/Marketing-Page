@@ -1,0 +1,61 @@
+// Navigation code here
+.container{
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: @main-bg-color;
+        width: 1000px;
+        position: fixed;
+        margin: 0 auto;     
+        z-index: 500; 
+        
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            margin: 2%;
+
+            h1 {
+                color: @main-h-color;
+                font-size: 2rem;
+                text-decoration: none;  
+                .spin(@standout-col);                  
+            }
+
+            a {
+                text-decoration: none;
+            }       
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 25%;
+            margin: 2%;
+
+            @media @phone {
+                width: 80%;
+            }             
+
+            a {
+                margin: 2%;
+                font-size: 1.5rem;
+                color: @main-h-color;
+                text-decoration: none; 
+
+                @media @phone {
+                    margin: 0 10% ;
+                }                            
+            }  
+            
+            a:hover {
+                .nav-hover();
+            } 
+        } // close nav
+    } // close top
+} //closes container
