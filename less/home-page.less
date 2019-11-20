@@ -16,14 +16,9 @@
             background-size: cover;
             height:500px;         
 
-            .callToAction { 
-                width: 40%;
-                line-height: 3rem;
-                background-color: @second-color;
-                text-align: center;
-                border-radius: 5px;
-                border: 2px solid @main-bg-color; 
-                
+            .callToAction {                                
+                .call2Action(@second-color, @main-bg-color);
+
                 @media @phone {
                     width: 60%;
                 }                     
@@ -35,7 +30,7 @@
                 }
 
                 .signup {
-                    .btn-format(80%, 5%);
+                    .btn-format(80%, 10px);
                     padding: 5%;
                     font-weight: bold; 
                    
