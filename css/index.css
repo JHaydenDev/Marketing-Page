@@ -171,7 +171,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #28590C;
+  background-color: #507657;
   width: 1000px;
   position: fixed;
   margin: 0 auto;
@@ -196,7 +196,7 @@ p {
   cursor: pointer;
   transform: rotateY(-360deg);
   transition-duration: 1000ms;
-  color: #FFA820;
+  color: #F9AE40;
 }
 .container .top .logo a {
   text-decoration: none;
@@ -225,7 +225,7 @@ p {
 }
 .container .top .nav a:hover:hover {
   cursor: pointer;
-  color: #FFA820;
+  color: #F9AE40;
   text-decoration: underline;
 }
 .container footer .socialMedia {
@@ -235,21 +235,21 @@ p {
   justify-content: center;
   margin: 0 auto;
   line-height: 5rem;
-  color: #28590C;
+  color: #507657;
 }
 .container footer .socialMedia a {
   margin: 0 2%;
 }
 .container footer .copyright {
   text-align: center;
-  background-color: #28590C;
+  background-color: #507657;
   color: #A1E6DF;
   font-size: 1rem;
   padding: 1% 0;
 }
 .container {
   z-index: 0;
-  background-color: #ebeee2;
+  background-color: #FBFCEB;
 }
 .container header .banner {
   display: flex;
@@ -265,9 +265,9 @@ p {
 .container header .banner .callToAction {
   width: 40%;
   line-height: 3rem;
-  background-color: #97BE11;
+  background-color: #91A799;
   text-align: center;
-  border: 2px solid #28590C;
+  border: 2px solid #507657;
 }
 @media (max-width: 500px) {
   .container header .banner .callToAction {
@@ -280,11 +280,11 @@ p {
   padding: 5%;
 }
 .container header .banner .callToAction .signup {
-  color: #FFA820;
-  background-color: #DFE9AC;
+  color: #F9AE40;
+  background-color: #FBFCEB;
   width: 80%;
   font-size: 1.5rem;
-  border: 2px solid #FFA820;
+  border: 2px solid #F9AE40;
   border-radius: 10px;
   text-align: center;
   padding: 5%;
@@ -293,8 +293,8 @@ p {
 .container header .banner .callToAction .signup:hover {
   cursor: pointer;
   color: #DFE9AC;
-  background-color: #FFA820;
-  border-color: #28590C;
+  background-color: #F9AE40;
+  border-color: #507657;
 }
 @media (max-width: 500px) {
   .container header .banner .callToAction .signup {
@@ -333,7 +333,7 @@ p {
 .container .middle .feat {
   width: 100%;
   text-align: center;
-  color: #28590C;
+  color: #507657;
 }
 @media (max-width: 500px) {
   .container .middle .feat {
@@ -343,7 +343,7 @@ p {
 .container .middle .feat i {
   font-size: 3rem;
   margin: 8% 0;
-  color: #FFA820;
+  color: #F9AE40;
 }
 @media (max-width: 500px) {
   .container .middle .feat i {
@@ -379,9 +379,9 @@ header .team_banner {
 header .team_banner .team_box {
   width: 40%;
   line-height: 3rem;
-  background-color: #97BE11;
+  background-color: #91A799;
   text-align: center;
-  border: 2px solid #28590C;
+  border: 2px solid #507657;
 }
 header .team_banner .team_box h4 {
   font-size: 2rem;
@@ -389,11 +389,11 @@ header .team_banner .team_box h4 {
   padding: 5%;
 }
 header .team_banner .team_box .signup {
-  color: #FFA820;
-  background-color: #DFE9AC;
+  color: #F9AE40;
+  background-color: #FBFCEB;
   width: 80%;
   font-size: 1.5rem;
-  border: 2px solid #FFA820;
+  border: 2px solid #F9AE40;
   border-radius: 5%;
   text-align: center;
   padding: 5%;
@@ -402,8 +402,8 @@ header .team_banner .team_box .signup {
 header .team_banner .team_box .signup:hover {
   cursor: pointer;
   color: #DFE9AC;
-  background-color: #FFA820;
-  border-color: #28590C;
+  background-color: #F9AE40;
+  border-color: #507657;
 }
 .wrapper {
   display: flex;
@@ -464,11 +464,11 @@ header .team_banner .team_box .signup:hover {
 }
 .wrapper .card .prof-links i {
   font-size: 3rem;
-  color: #28590C;
+  color: #507657;
 }
 .wrapper .card .prof-links i:hover {
   cursor: pointer;
-  color: #FFA820;
+  color: #F9AE40;
 }
 .wrapper .card .prof-links a {
   margin: 2% 10%;
